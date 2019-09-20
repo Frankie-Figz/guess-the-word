@@ -8,29 +8,30 @@
     <title>Welcome To Hangman !</title>
 </head>
 <body>
-    <div id = "fill-space"> FILL THE SPACE ! </div>
-    <div id = "blanks"> 
-    <div id="B0" class="blank">  </div>
-    <div id="B1" class="blank">  </div>
-    <div id="B2" class="blank">  </div>
-    <div id="B3" class="blank">  </div>
-    <div id="B4" class="blank">  </div>
-    <div id="B5" class="blank">  </div>
-    <div id="B6" class="blank">  </div>
-    <div id="B7" class="blank">  </div>
-    <div id="B8" class="blank">  </div>
-    <div id="B9" class="blank">  </div>
-    </div>
+    <div id = "fill-space"> FILL THE SPACE ! THEME = MATHEMATICS </div>
 
-    <div id = "stats">
-       <div id = "wins"> WINS : 0</div>
-        <div id = "loss"> LOSSES : 0 </div>
+    <div id = "container">
+            <div id = "blanks"> 
+                <div id="B0" class="blank">  </div>
+                <div id="B1" class="blank">  </div>
+                <div id="B2" class="blank">  </div>
+                <div id="B3" class="blank">  </div>
+                <div id="B4" class="blank">  </div>
+                <div id="B5" class="blank">  </div>
+                <div id="B6" class="blank">  </div>
+                <div id="B7" class="blank">  </div>
+                <div id="B8" class="blank">  </div>
+                <div id="B9" class="blank">  </div>
+            </div>
+        
+            <div id = "stats">
+               <div id = "wins"> WINS : 0</div>
+                <div id = "loss"> LOSSES : 0 </div>
+                <div id = "guessesRemaining"> GUESSES REMAINING : 5 </div>
+                <div id = "lettersGuessed"> LETTERS GUESSED : </div>
+            </div>
     </div>
-
-    <div id = "currentGame"> 
-        <div id = "guessesRemaining"> GUESSES REMAINING : 5 </div>
-        <div id = "lettersGuessed"> LETTERS GUESSED : </div>
-    </div>
+    
 </body>
 <script>    
     // Area to be used for displaying statistics about the game
@@ -40,7 +41,7 @@
     var lettersGuessedArea = document.getElementById("lettersGuessed");
 
     var playAgain = false;
-    var wordDictionary = ['handler','lizard','dog','cats', 'automatic', 'events', 'stellar', 'handling', 'moon', 'pushing','zoolander'];
+    var wordDictionary = ['triangle','circle','fractal','variable', 'square', 'exponent', 'summation', 'multiply', 'fraction', 'function'];
     var word = "";
     var previousGuesses = [];
 
